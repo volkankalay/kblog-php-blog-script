@@ -8,8 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="Volkan Kalay">
 @yield('metatags')
-  <title>@yield('title','Kişisel Blog') - {{$config->title}}</title>
-
+  <title>@yield('title') @if(Request::segment(1)!=NULL)-@endif {{$config->title}}</title>
   <link rel="shortcut icon" href="{{$config->favicon}}" type="image/x-icon" />
 
   <!-- Bootstrap core CSS -->

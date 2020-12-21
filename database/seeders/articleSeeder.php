@@ -16,20 +16,18 @@ class articleSeeder extends Seeder
      */
     public function run()
     {
-      $faker = Faker::create();
-      for($i=0;$i<5;$i++){
-      $title=$faker->sentence(5);
+      $title = 'İlk Blog Yazım!';
         DB::table('articles')->insert([
-          'category_id'=>rand(1,5),
+          'category_id'=>1,
           'title'=>$title,
-          'image'=>$faker->imageUrl(800,600,'cats', true, 'KBLOG'),
-          'content'=>$faker->paragraphs(5, true),
-          'status'=>rand(0,1),
+          'image'=>'https://i.hizliresim.com/f0p50y.png',
+          'content'=>'İlk Blog Yazımız. KBlog kullandığınız için teşekkürler!',
+          'semicontent'=>'KBlog kullandığınız için teşekkürler!',
+          'status'=>1,
           'slug'=>Str::slug($title),
-          'tags'=>'etiket'.rand(1,10).',etiket'.rand(1,10).',etiket'.rand(1,10),
+          'tags'=>'hoşgeldiniz',
           'created_at'=>now(),
           'updated_at'=>now()
         ]);
-      }
     }
 }

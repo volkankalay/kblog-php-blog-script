@@ -15,13 +15,11 @@ class ConfigSeeder extends Seeder
     {
       DB::table('configs')->insert([
         'title'=>'KBlog',
-        'background'=>'#',
-        'favicon'=>'#',
+        'background'=>'https://i.hizliresim.com/EXJ3am.jpg',
+        'favicon'=>'https://i.hizliresim.com/g6NJHH.jpg',
         'active'=>'1',
-        'facebook'=>'https://www.facebook.com',
-        'instagram'=>'https://www.instagram.com',
-        'twitter'=>'https://www.twitter.com',
-        'github'=>'https://www.github.com',
+        'github'=>'https://www.github.com/volkankalay',
+        'other'=>'https://www.vlkn.icu',
         'created_at'=>now(),
         'updated_at'=>now()
       ]);

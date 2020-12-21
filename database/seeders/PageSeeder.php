@@ -16,7 +16,7 @@ class PageSeeder extends Seeder
     public function run()
     {
       $count=0;
-        $pages=['Hakkımızda','Kariyer','Vizyonumuz','Misyonumuz'];
+        $pages=['Hakkımızda'];
         foreach ($pages as $page) {
           $count++;
             DB::table('pages')->insert([

@@ -14,13 +14,13 @@ class categorySeeder extends Seeder
      */
     public function run()
     {
-      $categories=['Bilişim','Teknoloji','Sağlık','Spor','Günlük Yaşam'];
+      $categories=['Varsayılan'];
       foreach ($categories as $kat) {
           DB::table('categories')->insert([
             'name'=>$kat,
             'slug'=>Str::slug($kat),
             'created_at'=>now(),
-            'updated_at'=>now(),            
+            'updated_at'=>now(),
           ]);
         }
     }

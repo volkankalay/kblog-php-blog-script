@@ -1,5 +1,5 @@
 @extends('front.layouts.master')
-@section('title','Kişisel Blog')
+
 @section('content')
 
       <div class="col-md-9 mx-auto">
