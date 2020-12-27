@@ -20,7 +20,7 @@ class articleSeeder extends Seeder
         DB::table('articles')->insert([
           'category_id'=>1,
           'title'=>$title,
-          'image'=>'https://i.hizliresim.com/f0p50y.png',
+          'image'=>'https://i.hizliresim.com/E0wQfz.jpg',
           'content'=>'İlk Blog Yazımız. KBlog kullandığınız için teşekkürler!',
           'semicontent'=>'KBlog kullandığınız için teşekkürler!',
           'status'=>1,
