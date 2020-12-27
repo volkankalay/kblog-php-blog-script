@@ -15,8 +15,8 @@ class ConfigSeeder extends Seeder
     {
       DB::table('configs')->insert([
         'title'=>'KBlog',
-        'background'=>'https://i.hizliresim.com/EXJ3am.jpg',
-        'favicon'=>'https://i.hizliresim.com/g6NJHH.jpg',
+        'background'=>'https://i.hizliresim.com/NAwb32.jpg',
+        'favicon'=>'https://i.hizliresim.com/TipEhS.png',
         'active'=>'1',
         'github'=>'https://www.github.com/volkankalay',
         'other'=>'https://www.vlkn.icu',
